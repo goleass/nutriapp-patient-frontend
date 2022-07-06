@@ -2,7 +2,7 @@ import axios from "axios";
 import { getUserLocalStorage, setUserLocalStorage } from "../context/AuthProvider/util";
 
 export const Api = axios.create({
-  baseURL: "http://localhost:3333/"
+  baseURL: process.env.API_URL || "http://localhost:3333/"
 })
 
 Api.interceptors.request.use(

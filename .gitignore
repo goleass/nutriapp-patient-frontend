@@ -8,6 +8,7 @@ logs
 **/*.backup.*
 **/*.back.*
 .git
+.env
 
 node_modules
 bower_components
