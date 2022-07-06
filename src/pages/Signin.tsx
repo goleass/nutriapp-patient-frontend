@@ -50,7 +50,8 @@ function Signin() {
       navigate('/')
 
     } catch (error: any) {
-      if(error && error.response && error.response.status === 401) setError("Usuário ou senha incorreto.")
+      if(error && error.response && error.response.status === 401) 
+        setError(error.response.data.error)
 
       if(error.message === "Network Error") setError("Houve algum erro interno :'(")
     } finally {
