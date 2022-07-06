@@ -9,6 +9,8 @@ import './css/style.scss';
 
 import { AuthProvider } from './context/AuthProvider';
 
+console.log('csdcsdc', import.meta.env)
+
 // // Professional
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
